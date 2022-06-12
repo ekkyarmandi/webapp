@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block title %}
+Student Info
+{% endblock %}
+
+<!-- -------------------------------------------------------------------- -->
+
+{% block css %}
+
+{% endblock %}
+
+<!-- -------------------------------------------------------------------- -->
+
+{% block content%}
+<div class="container">
+    <!-- student code start -->
+    <h1>Student Info</h1>
+    <table>
+        <tr>
+            <td>User Id</td>
+            <td>:</td>
+            <td>{{ uid }}</td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td>:</td>
+            <td>{{ username }}</td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>:</td>
+            <td>{{ password }}</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>:</td>
+            <td>{{ email }}</td>
+        </tr>
+    </table>
+    <br>
+    <a class="btn btn-secondary" href="/user/student-list" role="button">Back to {{ previous_page }}</a>
+    <!-- student code end -->
+</div>
+{% endblock%}
+
+<!-- -------------------------------------------------------------------- -->
+
+{% block js %}
+
+{% endblock %}
